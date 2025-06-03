@@ -1,0 +1,86 @@
+body {
+    padding-top: 60px; 
+}
+@keyframes infinity-scroll-left {
+    from {
+      transform: translateX(0);
+    }
+      to {
+      transform: translateX(-100%);
+    }
+    }
+    .scroll-infinity__wrap {
+      display: flex;
+      overflow: hidden;
+    }
+    .scroll-infinity__list {
+      display: flex;
+      list-style: none;
+      padding: 0
+    }
+    .scroll-infinity__list--left {
+      animation: infinity-scroll-left 80s infinite linear 0.5s both;
+    }
+    .scroll-infinity__item {
+      width: calc(100vw / 5);
+    }
+    .scroll-infinity__item>img {
+      width: 100%;
+    }
+header {
+    position: fixed; /*← fixedで固定 */
+    width: 100%;   /*ヘッダーの大きさを調節*/
+    height: 30px; 
+    background: #ba5f5f; 
+    padding: 20px 100px; 
+    box-sizing: border-box;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center;    /*ここまで*/
+  
+   /* ロゴとメニューを横並びにする */
+    display: flex; 
+    justify-content:space-between;
+}
+
+header .nav .menu {
+    display: flex; 
+}
+
+header .nav .menu li {
+    list-style: none; 
+    margin-left: 40px;
+}
+
+header .nav .menu li a{
+   color: #ffbc65;
+   font-weight:bold;
+   text-decoration: none;
+}
+
+main {
+    text-align:center;
+}
+
+h2 {
+   color: #B78D4A;
+   text-decoration: none;
+   padding-top: 100px;
+}
+
+footer {
+    background: #a03434; 
+    padding:1em;
+    margin-top:1000px;
+}
+
+footer p {
+    font-size: .20em;
+    color: #fff;
+    max-width: 1000px;
+    padding: 0;
+    text-align:center;
+    margin:0 auto;
+    font-weight:bold;
+}
